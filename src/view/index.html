@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+<%= require('html-loader!./layout/html-head.html') %>
+<body>
+hello rwby
+<!-- 从外部引入的js脚本 -->
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<!-- <script type="text/javascript" src="../../dist/js/base.js"></script> -->
+<!-- 需在所有js之前引入公共模块，否则接下来的js不会被引入也不会被报错，并且公共模块中的所有的打印语句是不会输出到控制台的, webpack打包过后，会将内部代码封闭到一个立刻执行的函数作用域中去，防止污染全局。
+所以在全局访问那些变量或者打印语句时并不能获取到。-->
+<!-- <script type="text/javascript" src="../../dist/js/index.js"></script> -->
+</body>
+</html>

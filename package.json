@@ -1,0 +1,39 @@
+{
+  "name": "minimall-fe",
+  "version": "1.0.0",
+  "description": "minimall前端代码",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"WEBPACK_ENV=dev webpack-dev-server --inline --port 8088",
+    "dev_win":"set WEBPACK_ENV=dev && webpack-dev-server --inline --port 8088",
+    "dist":"WEBPACK_ENV=online webpack -p",
+    "dist_win": "set WEBPACK_ENV=online && webpack -p"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bt9396118/minimall-fe.git"
+  },
+  "author": "T0NG",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bt9396118/minimall-fe/issues"
+  },
+  "homepage": "https://github.com/bt9396118/minimall-fe#readme",
+  "devDependencies": {
+    "css-loader": "^2.1.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^3.0.1",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.5.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
+}
